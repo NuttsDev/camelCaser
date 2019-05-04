@@ -1,0 +1,1 @@
+module.exports.camelCaseText = (text) => { var strings = text.split(', '); var returnText = ""; for(var i = 0; i < strings.length; i++) { strings[i] = strings[i].toLowerCase(); if(i > 0) { strings[i] = strings[i].charAt(0).toUpperCase() + strings[i].slice(1); } returnText += strings[i]; } return returnText; }
